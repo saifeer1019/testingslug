@@ -1,6 +1,6 @@
 // src/app/[slug]/page.js
 
-export const dynamic = 'force-dynamic'  // Add this line to ensure dynamic routing works
+ // Add this line to ensure dynamic routing works
 
 export default function Page({ params }) {
     return (
