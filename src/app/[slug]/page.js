@@ -1,11 +1,5 @@
 // src/app/[slug]/page.js
-
- // Add this line to ensure dynamic routing works
-
-export default function Page({ params }) {
-    return (
-        <div className="p-4">
-            Current slug: {params.slug}
-        </div>
-    )
+export default async function Page({ params }) {
+    const { slug } = params.slug; // Await the params object
+    return <div>{slug}</div>;
 }
